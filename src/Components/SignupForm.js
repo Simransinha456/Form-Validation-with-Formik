@@ -27,19 +27,19 @@ const SignupForm = () => {
           <Form>
             <label htmlFor="name">Name</label><br />
             <Field className="field" type="text" name="name" /><br />
-            {errors.name && <small>{errors.name}</small>}<br />
+            {errors.name && <small className="error">{errors.name}</small>}<br />
 
             <label htmlFor="email">Email</label><br />
             <Field className="field" type="email" name="email" /><br />
-            {errors.email && <small>{errors.email}</small>}<br />
+            {errors.email && <small className="error">{errors.email}</small>}<br />
 
             <label htmlFor="password">Password</label><br />
             <Field className="field" type="password" name="password" /><br />
-            {errors.password && <small>{errors.password}</small>}<br />
+            {errors.password && <small className="error">{errors.password}</small>}<br />
 
             <label htmlFor="cpassword">Confirm Password</label><br />
             <Field className="field" type="password" name="cpassword" /><br />
-            {errors.cpassword && <small>{errors.cpassword}</small>}<br />
+            {errors.cpassword && <small className="error">{errors.cpassword}</small>}<br />
 
             <button type="submit">Sign Up</button>
           </Form>

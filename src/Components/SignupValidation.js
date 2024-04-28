@@ -4,15 +4,15 @@ export const SignupValidation = Yup.object().shape({
     name: Yup.string()
         .min(2, 'Too Short!')
         .max(20, 'Too Long!')
-        .required('Please enter your name'),
+        .required('Required'),
     email: Yup.string()
         .email('Invalid email')
-        .required('Please enter your email'),
+        .required('Required'),
     password: Yup.string()
         .min(5, 'Too Short!')
         .max(10, 'Too Long!')
-        .required('Please enter your password'),
+        .required('Required'),
     cpassword: Yup.string()
         .oneOf([Yup.ref('password')], 'Passwords must match')
-        .required('Please confirm your password') 
+        .required('Required') 
 });
