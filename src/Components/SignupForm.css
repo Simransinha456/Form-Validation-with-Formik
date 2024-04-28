@@ -1,0 +1,32 @@
+.Signup{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #e5e3e3;
+}
+label{
+    font-size: 1.3rem;
+    margin: 1rem;
+}
+.field{
+    width: 20rem;
+    height: 1rem;
+    margin-top: 0.5rem;
+    padding: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    border: none;
+}
+button{
+    width: 10rem;
+    height: 3rem;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+    border-radius: 10px;
+    background-color: #2a91d1;
+    color: white;
+    cursor: pointer;
+    border: none;   
+}
